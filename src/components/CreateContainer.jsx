@@ -122,8 +122,22 @@ const CreateContainer = () => {
             <MdFoodBank className="text-gray-700 text-2x1"/>
             <input 
               type="text" 
-              required 
+              required
+              value={calories}
+              onChange={(e) => setCalories(e.target.value)} 
               placeholder="Calorias" 
+              className="w-full h-full text-lg bg-transparent outline-none border-none placeholder:text-gray-400 text-textColor"
+            />
+          </div>
+
+          <div className="w-full py-2 border-b border-gray-300 flex items-center gap-2">
+            <MdFoodBank className="text-gray-700 text-2x1"/>
+            <input 
+              type="text" 
+              required
+              value={price}
+              onChange={(e) => setPrice(e.target.value)} 
+              placeholder="Precio" 
               className="w-full h-full text-lg bg-transparent outline-none border-none placeholder:text-gray-400 text-textColor"
             />
           </div>
