@@ -29,5 +29,30 @@ export const heroData = [
         id : 4, 
         name : 'Rancho', 
         decp : 'Carne 100% Res y Barbecue', 
-        price : '75.00', imageSrc : RN1},
-]
+        price : '75.00', imageSrc : RN1
+    },
+];
+
+export const categories = [
+    {
+      id: 1,
+      name: "Hamburguesas",
+      urlParamName: "burguer",
+    },
+    {
+      id: 2,
+      name: "Jugos",
+      urlParamName: "jugos",
+    },
+    {
+      id: 3,
+      name: "Refrescos",
+      urlParamName: "refrescos",
+    },
+    {
+      id: 4,
+      name: "Nieve",
+      urlParamName: "nieve",
+    },
+  ];
+
