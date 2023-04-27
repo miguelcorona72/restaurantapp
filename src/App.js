@@ -1,7 +1,8 @@
 import React from 'react';
 import { Route, Routes } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
-import { CreateContainer, Header, MainContainer } from "./components";
+import { CreateContainer, Header, MainContainer, Footer } from "./components";
+
 
 const App = () => {
   return (
@@ -15,6 +16,9 @@ const App = () => {
               <Route path="/createItem" element={<CreateContainer />} />
             </Routes>
         </main>
+
+        <Footer />
+
       </div>
     </AnimatePresence>
   );
