@@ -69,16 +69,16 @@ const Header = () => {
                     className="flex items-center gap-8"
                 >
                     <li className="text-base text-textColor hover:textheadingColor duration-100 transition-all ease-in-out cursor-pointer">
-                        Home
+                        <a href='#'>Home</a>
                     </li>
                     <li className="text-base text-textColor hover:textheadingColor duration-100 transition-all ease-in-out cursor-pointer">
-                        Menú
+                        <Link to = {'/Menu'}>Menú</Link>
+                    </li>                          
+                    <li className="text-base text-textColor hover:textheadingColor duration-100 transition-all ease-in-out cursor-pointer">
+                        <Link to = {'/AcercaDe'}>Acerca De</Link> 
                     </li>
                     <li className="text-base text-textColor hover:textheadingColor duration-100 transition-all ease-in-out cursor-pointer">
-                        Acerca De 
-                    </li>
-                    <li className="text-base text-textColor hover:textheadingColor duration-100 transition-all ease-in-out cursor-pointer">
-                        Servicio
+                        <Link to = {'/Servicio'}>Servicio</Link>
                     </li>
                 </motion.ul>
 
